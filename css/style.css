@@ -56,6 +56,7 @@ body {
     color: #fff;
     text-transform: uppercase;
     text-align: center;
+    backface-visibility: hidden;
 }
 
 .header--heading__main {
@@ -64,7 +65,7 @@ body {
     font-weight: 700;
     letter-spacing: 35px;
 
-    animation: moveInLeft 1.5s ease-out;
+    animation: moveInLeft 1.3s ease-out;
 }
 
 .header--heading__sub {
@@ -72,6 +73,8 @@ body {
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 17.4px;
+
+    animation: moveInRight 1.3s ease-out;
 }
 
 @keyframes moveInLeft {
@@ -81,7 +84,23 @@ body {
     }   
 
     80% {
+        transform: translateX(10px);
+    }
 
+    100% {
+        opacity: 1;
+        transform: translate(0)
+    }  
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }   
+
+    80% {
+        transform: translateX(-10px);
     }
 
     100% {
