@@ -1,0 +1,79 @@
+@import "../abstracts/variables";
+
+// SECTION FEATURES BACKGROUND
+.section__features {
+    padding: 20rem 0;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-primary-light, 0.8), 
+        rgba($color-primary-dark, 0.8)),
+    url(../../img/nat-4.jpg);
+    background-size: cover;
+    transform: skewY(-7deg);
+    margin-top: -10rem;
+
+    & > * {
+        // Stop child elements skew line the background
+        transform: skewY(7deg);
+    }
+}
+
+// SECTION ITEMS
+.feature-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    transition: all .2s;
+    z-index: 0;
+
+    &__icon {
+        font-size: 6rem;
+        margin-bottom: .5rem;
+        background-image: linear-gradient(to right, #7ed56f, #28b485);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &__heading {
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        z-index: 10;
+        transform: translateY(-2rem) scale(1.05);
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+    }
+}
+
+// LAYOUT OF SECTION: FEATURES
+.container {
+    max-width: $grid-width;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "item1 item2 item3 item4";
+    column-gap: $margin-right-medium;
+    
+    &--1 {
+        grid-area: item1;    
+    }
+
+    &--2 {
+        grid-area: item2;   
+    }
+
+    &--3 {
+        grid-area: item3;   
+    }
+
+    &--4 {
+        grid-area: item4;   
+    }
+}
