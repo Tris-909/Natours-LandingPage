@@ -58,6 +58,23 @@
         }
     }
 
+    &--light {
+        color: #55c57a;
+        font-size: 1.6rem;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        transition: all .2s;
+        position: relative;
+        border-bottom: 1px solid #55c57a;
+        padding: .9rem;
+
+        &:hover {
+            background-color: #55c57a;
+            color: $color-white;
+        }
+    }
+
     &__animated--title {
         animation: moveInBottom .5s ease-out .75s;
         animation-fill-mode: backwards;

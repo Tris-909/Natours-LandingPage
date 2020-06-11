@@ -101,6 +101,20 @@ html {
   .btn--green::after {
     background-color: #28b485; }
 
+.btn--light {
+  color: #55c57a;
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  transition: all .2s;
+  position: relative;
+  border-bottom: 1px solid #55c57a;
+  padding: .9rem; }
+  .btn--light:hover {
+    background-color: #55c57a;
+    color: #fff; }
+
 .btn__animated--title {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
@@ -140,6 +154,10 @@ html {
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .hover--tours:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.hover--stories:hover {
   transform: skewY(2deg) skewX(15deg) scale(1.1);
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
@@ -392,3 +410,73 @@ html {
       grid-area: card3; }
     .section__tours--container-2 {
       grid-area: card2; }
+
+.section__stories {
+  position: relative;
+  padding: 15rem 0; }
+  .section__stories .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.15;
+    overflow: hidden; }
+    .section__stories .bg-video__content {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .section__stories--container {
+    max-width: 114rem;
+    margin: 0 auto; }
+
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem;
+  transform: skewX(-12deg); }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    position: relative;
+    transform: translateX(-3rem) skewX(12deg); }
+  .story__img {
+    height: 100%;
+    transform: translateX(-4rem) scale(1.4);
+    transition: all .5s; }
+  .story:hover .story__img {
+    transform: translateX(-4rem) scale(1);
+    transition: all .5s;
+    filter: blur(3px) brightness(80%); }
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    backface-visibility: hidden; }
+  .story:hover .story__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .story__text {
+    transform: skewX(12deg); }
+    .story__text--heading {
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-transform: uppercase; }
