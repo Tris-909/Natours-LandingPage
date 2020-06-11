@@ -54,6 +54,9 @@ html {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
+.u-margin-top-big {
+  margin-top: 8rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -91,6 +94,12 @@ html {
   color: #777; }
   .btn--white::after {
     background-color: #fff; }
+
+.btn--green {
+  background-color: #28b485;
+  color: #fff; }
+  .btn--green::after {
+    background-color: #28b485; }
 
 .btn__animated--title {
   animation: moveInBottom .5s ease-out .75s;
@@ -300,6 +309,10 @@ html {
       clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%); }
       .section__tours .card__picture--1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
+      .section__tours .card__picture--2 {
+        background-image: url(../img/nat-6.jpg); }
+      .section__tours .card__picture--3 {
+        background-image: url(../img/nat-7.jpg); }
     .section__tours .card__heading {
       font-size: 2.8rem;
       font-weight: 300;
@@ -316,6 +329,10 @@ html {
         box-decoration-break: clone; }
         .section__tours .card__heading-span-1 {
           background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+        .section__tours .card__heading-span-2 {
+          background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
+        .section__tours .card__heading-span-3 {
+          background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(84, 99, 250, 0.85)); }
     .section__tours .card__details {
       padding: 3rem; }
       .section__tours .card__details ul {
@@ -328,10 +345,6 @@ html {
           padding: 1rem; }
         .section__tours .card__details ul li:not(:last-child) {
           border-bottom: 1.5px solid #eee; }
-    .section__tours .card__side--back {
-      background-color: blue;
-      transform: rotateY(180deg);
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
     .section__tours .card__cta {
       position: absolute;
       top: 50%;
@@ -353,6 +366,18 @@ html {
     transform: rotateY(-180deg); }
   .section__tours .card:hover .card__side--back {
     transform: rotateY(0); }
+  .section__tours .card__side--back-1 {
+    background-color: blue;
+    transform: rotateY(180deg);
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+  .section__tours .card__side--back-2 {
+    background-color: blue;
+    transform: rotateY(180deg);
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+  .section__tours .card__side--back-3 {
+    background-color: blue;
+    transform: rotateY(180deg);
+    background-image: linear-gradient(to right bottom, #2998ff, #5463fa); }
   .section__tours--container {
     max-width: 114rem;
     margin: 0 auto;
@@ -364,6 +389,6 @@ html {
     .section__tours--container-1 {
       grid-area: card1; }
     .section__tours--container-2 {
-      grid-area: card2; }
-    .section__tours--container-2 {
       grid-area: card3; }
+    .section__tours--container-2 {
+      grid-area: card2; }
