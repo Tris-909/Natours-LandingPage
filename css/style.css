@@ -115,6 +115,25 @@ html {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(0px); }
 
+.heading__component {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s; }
+
+.hover--about:hover {
+  transform: skewX(1deg) skewY(-7deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.hover--tours:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.822), rgba(40, 180, 133, 0.822)), url(../img//hero.jpg);
@@ -157,19 +176,6 @@ html {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -25vh; }
-  .section__about--title {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    background-image: linear-gradient(to right, #7ed56f, #28b485);
-    display: inline-block;
-    -webkit-background-clip: text;
-    color: transparent;
-    letter-spacing: 2px;
-    transition: all .2s; }
-    .section__about--title:hover {
-      transform: skewX(1deg) skewY(-7deg) scale(1.1);
-      text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
   .section__about--heading {
     font-size: 1.6rem;
     font-weight: 700;
@@ -251,7 +257,7 @@ html {
     transform: translateY(-2rem) scale(1.05);
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3); }
 
-.container {
+.container--features {
   max-width: 114rem;
   margin: 0 auto;
   display: grid;
@@ -259,11 +265,105 @@ html {
   grid-template-rows: 1fr;
   grid-template-areas: "item1 item2 item3 item4";
   column-gap: 6rem; }
-  .container--1 {
+  .container--features--features1 {
     grid-area: item1; }
-  .container--2 {
+  .container--features--features2 {
     grid-area: item2; }
-  .container--3 {
+  .container--features--features3 {
     grid-area: item3; }
-  .container--4 {
+  .container--features--features4 {
     grid-area: item4; }
+
+.section__tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 15rem 0;
+  margin-top: -10rem; }
+  .section__tours .card {
+    perspective: 150rem;
+    position: relative;
+    height: 53rem; }
+    .section__tours .card__side {
+      height: 53rem;
+      transition: all .8s ease;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      backface-visibility: hidden;
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .section__tours .card__picture {
+      background-size: cover;
+      height: 23rem;
+      background-blend-mode: hue;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%); }
+      .section__tours .card__picture--1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
+    .section__tours .card__heading {
+      font-size: 2.8rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: #ffffff;
+      position: absolute;
+      top: 12rem;
+      right: 2rem;
+      text-align: right;
+      width: 60%; }
+      .section__tours .card__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone; }
+        .section__tours .card__heading-span-1 {
+          background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+    .section__tours .card__details {
+      padding: 3rem; }
+      .section__tours .card__details ul {
+        list-style: none;
+        width: 80%;
+        margin: 0 auto; }
+        .section__tours .card__details ul li {
+          text-align: center;
+          font-size: 1.5rem;
+          padding: 1rem; }
+        .section__tours .card__details ul li:not(:last-child) {
+          border-bottom: 1.5px solid #eee; }
+    .section__tours .card__side--back {
+      background-color: blue;
+      transform: rotateY(180deg);
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+    .section__tours .card__cta {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 90%;
+      text-align: center;
+      transform: translate(-50%, -50%); }
+    .section__tours .card__price-box {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 8rem; }
+    .section__tours .card__price--only {
+      font-size: 1.5rem;
+      text-transform: uppercase; }
+    .section__tours .card__price--value {
+      font-size: 6rem;
+      font-weight: 100; }
+  .section__tours .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .section__tours .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .section__tours--container {
+    max-width: 114rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "card1 card2 card3";
+    column-gap: 6rem; }
+    .section__tours--container-1 {
+      grid-area: card1; }
+    .section__tours--container-2 {
+      grid-area: card2; }
+    .section__tours--container-2 {
+      grid-area: card3; }

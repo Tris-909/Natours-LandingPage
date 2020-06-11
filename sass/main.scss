@@ -3,13 +3,16 @@
 @import "./base/typography";
 @import "./base/utilities";
 
-@import "./components/button";
-
+// UTILITIES
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
 @import "./abstracts/function";
 
-@import "./pages/home";
+
+//SINGLE COMPONENT
+@import "./components/button";
+@import "./components/heading";
+
 
 // LAYOUT STRUCTURE
 @import "./layout/header";
