@@ -75,6 +75,16 @@
         }
     }
 
+    &-form {
+        background-color: #55c57a;
+        color: #ffffff;
+
+        &::after {
+            background-color: #55c57a;
+        }
+    }
+    
+
     &__animated--title {
         animation: moveInBottom .5s ease-out .75s;
         animation-fill-mode: backwards;
@@ -104,4 +114,8 @@
             transform: translateY(0px);
         }
     }
+}
+
+#EditFormButton {
+    padding: 1rem 4rem;
 }
