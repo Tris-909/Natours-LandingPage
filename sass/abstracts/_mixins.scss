@@ -9,3 +9,24 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == iphone5 {
+        @media (max-width: 20em) {@content}; //320px
+    }
+    @if $breakpoint == GalaxyS5 {
+        @media (max-width: 22.5em) {@content}; //360px
+    }
+    @if $breakpoint == iphone8 {
+        @media (max-width: 23.5em) {@content}; //376px
+    }
+    @if $breakpoint == iphone8plus {
+        @media (max-width: 25.875em) {@content}; //414px
+    }
+    @if $breakpoint == ipad  {
+        @media (max-width: 48em) {@content}; //768px
+    }
+    @if $breakpoint == big-desktop  {
+        @media (max-width: 120em) {@content}; //1920px
+    }
+}
