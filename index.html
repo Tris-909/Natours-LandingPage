@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
         <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
@@ -38,7 +38,7 @@
                     <span class="header__heading--sub">is where life happens</span>
                 </h1>
 
-                <a href="#" class="btn btn--white btn__animated--title">Discover our tours</a>
+                <a href="#section__tours" class="btn btn--white btn__animated--title">Discover our tours</a>
             </div>
         </header>
 
@@ -104,7 +104,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section__tours">
+            <section class="section__tours" id="section__tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading__component hover--tours">
                         Most popular tour 
@@ -133,7 +133,7 @@
                                     <div class="card__price-box">
                                         <p class="card__price--only">Only</p>
                                         <p class="card__price--value">$299</p>
-                                        <a href="#" class="btn btn--white">Book Now!</a>
+                                        <a href="#popup" class="btn btn--white">Book Now!</a>
                                     </div>
                                 </div>
                             </div>
@@ -161,7 +161,7 @@
                                     <div class="card__price-box">
                                         <p class="card__price--only">Only</p>
                                         <p class="card__price--value">$499</p>
-                                        <a href="#" class="btn btn--white">Book Now!</a>
+                                        <a href="#popup" class="btn btn--white">Book Now!</a>
                                     </div>
                                 </div>
                             </div>
@@ -189,7 +189,7 @@
                                     <div class="card__price-box">
                                         <p class="card__price--only">Only</p>
                                         <p class="card__price--value">$899</p>
-                                        <a href="#" class="btn btn--white">Book Now!</a>
+                                        <a href="#popup" class="btn btn--white">Book Now!</a>
                                     </div>
                                 </div>
                             </div>
@@ -322,5 +322,25 @@
                 </div>
             </div>
         </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__container">
+                <div class="popup__container--left">
+                    <div class="img__container">
+                        <img src="./img/nat-8.jpg" alt="images-1" class="img__container--1" />
+                        <img src="./img/nat-9.jpg" alt="images-2" class="img__container--2" />
+                    </div>
+                </div>
+                <div class="popup__container--right">
+                    <a href="#section__tours" class="popup__dismiss"><i class="fas fa-times"></i></a>
+                    <div class="padding__content">
+                        <h2 class="heading__component">Start Booking Now</h2>
+                        <div class="popup__notice u-margin-bottom-small">Important - please read the terms and conditions first</div>
+                        <p class="u-margin-bottom-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quidem eos adipisci ratione. Dicta voluptate quis alias quidem unde repudiandae quam et velit, rerum natus, vel ullam facere totam architecto?</p>
+                        <a href="#" class="btn btn--lightgreen">Book now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

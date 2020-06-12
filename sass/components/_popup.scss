@@ -1,0 +1,90 @@
+@import "../abstracts/variables";
+
+.popup {
+    // DARK BACKGROUND
+    background-color: rgba($color-black, .8);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 6000;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__dismiss {
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+
+        &:link, &:visited {
+            font-size: 2.5rem;
+            text-decoration: none;
+            font-weight: 200;
+            color: rgba($color-black, .6);
+        }
+    }
+
+    // LAYOUT OF POPUP CARD
+    &__container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 70%;
+        height: 50rem;
+        background-color: $color-white;
+        box-shadow: 0 2rem 4rem rgba($color-black, .2);
+        transform: translate(-50%, -50%);
+
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-template-rows: 1fr;
+        grid-template-areas: "left right";
+
+        &--left {
+            grid-area: left;
+            height: inherit;
+        }
+
+        &--right {
+            grid-area: right;
+            height: inherit;
+            position: relative;
+        }
+    }
+
+    &__notice {
+        font-size: $default-font-size;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+.img__container {
+    height: inherit;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "img1"
+    "img2";
+
+    &--1 {
+        grid-area: img1;
+        width: 100%;
+    }
+
+    &--2 {
+        grid-area: img2;
+        width: 100%;
+    }
+}
+
+.padding__content {
+    padding: 20% 10% 20% 10%;
+}
