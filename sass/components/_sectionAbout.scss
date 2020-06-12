@@ -22,8 +22,8 @@
 
     // LAYOUT OF ABOUT SECTION
     .content__container {
-        max-width: $grid-width;
-        margin: 0 auto;
+        @include margin-center;
+        
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;

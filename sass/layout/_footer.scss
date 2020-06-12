@@ -1,5 +1,5 @@
 .footer {
-    background-color: #333;
+    background-color: $color-black-subtle;
     padding: 10rem;
     font-size: 1.4rem;
 
@@ -66,16 +66,16 @@
 
     // FOOTER LINK WITH HOVER ANIMATION 
     &__link {
-        color: #f7f7f7;
-        background-color: #333;
+        color: $color-grey-light-1;
+        background-color: $color-black-subtle;
         text-decoration: none;
         text-transform: uppercase;
         display: inline-block;
         transition: all .2s;
 
         &:hover {
-            color: #55c57a;
-            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+            color: $color-primary;
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
             transform: rotate(5deg) scale(1.3);
         }
     }

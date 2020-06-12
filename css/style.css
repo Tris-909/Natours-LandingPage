@@ -129,7 +129,7 @@ html {
 
 .btn-form {
   background-color: #55c57a;
-  color: #ffffff; }
+  color: #fff; }
   .btn-form::after {
     background-color: #55c57a; }
 
@@ -208,11 +208,11 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     width: 70%;
     height: 50rem;
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-    transform: translate(-50%, -50%);
     display: grid;
     grid-template-columns: 35% 65%;
     grid-template-rows: 1fr;
@@ -526,7 +526,7 @@ html {
       font-size: 2.8rem;
       font-weight: 300;
       text-transform: uppercase;
-      color: #ffffff;
+      color: #fff;
       position: absolute;
       top: 12rem;
       right: 2rem;
@@ -558,12 +558,12 @@ html {
       position: absolute;
       top: 50%;
       left: 50%;
+      transform: translate(-50%, -50%);
       width: 90%;
-      text-align: center;
-      transform: translate(-50%, -50%); }
+      text-align: center; }
     .section__tours .card__price-box {
       text-align: center;
-      color: #ffffff;
+      color: #fff;
       margin-bottom: 8rem; }
     .section__tours .card__price--only {
       font-size: 1.5rem;
@@ -655,7 +655,7 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, 20%);
-    color: #ffffff;
+    color: #fff;
     text-transform: uppercase;
     font-size: 1.7rem;
     text-align: center;
@@ -680,7 +680,7 @@ html {
     margin: 0 auto; }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0) 50%), url(../../img/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(0, 0, 0, 0) 50%), url(../../img/nat-10.jpg);
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);

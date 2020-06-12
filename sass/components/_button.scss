@@ -68,28 +68,28 @@
     }
 
     &--light {
-        color: #55c57a;
+        color: $color-primary;
         font-size: 1.6rem;
         text-decoration: none;
         padding: 1.5rem 4rem;
         display: inline-block;
         transition: all .2s;
         position: relative;
-        border-bottom: 1px solid #55c57a;
+        border-bottom: 1px solid $color-primary;
         padding: .9rem;
 
         &:hover {
-            background-color: #55c57a;
+            background-color: $color-primary;
             color: $color-white;
         }
     }
 
     &-form {
-        background-color: #55c57a;
-        color: #ffffff;
+        background-color: $color-primary;
+        color: $color-white;
 
         &::after {
-            background-color: #55c57a;
+            background-color: $color-primary;
         }
     }
     
