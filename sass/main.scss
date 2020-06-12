@@ -1,13 +1,10 @@
 @import "./base/base";
 @import "./base/animation";
-@import "./base/typography";
 @import "./base/utilities";
 
 // UTILITIES
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
-@import "./abstracts/function";
-
 
 //SINGLE COMPONENT
 @import "./components/button";
@@ -17,3 +14,4 @@
 // LAYOUT STRUCTURE
 @import "./layout/header";
 @import "./layout/body";
+@import "./layout/footer";
