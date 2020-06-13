@@ -11,8 +11,11 @@
 }
 
 @mixin respond($breakpoint) {
-    @if $breakpoint == iphone5 {
+    @if $breakpoint == iphone5__vertical {
         @media (max-width: 20em) {@content;} //320px
+    }
+    @if $breakpoint == iphone5__horizontal {
+        @media (max-width: 35.5em) {@content;} //568px
     }
     @if $breakpoint == GalaxyS5 {
         @media (max-width: 22.5em) {@content;} //360px

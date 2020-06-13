@@ -13,6 +13,9 @@ body {
   @media (max-width: 23.5em) {
     body {
       padding: 0px; } }
+  @media (max-width: 35.5em) {
+    body {
+      padding: 0px; } }
 
 html {
   font-size: 62.5%; }
@@ -310,6 +313,12 @@ html {
       width: 10rem;
       top: 5rem;
       right: 9rem; } }
+  @media (max-width: 35.5em) {
+    .navigation__button {
+      height: 5rem;
+      width: 5rem;
+      top: 3rem;
+      right: 3rem; } }
   .navigation__button:hover .navigation__icon::before {
     top: -1rem; }
   .navigation__button:hover .navigation__icon::after {
@@ -330,6 +339,9 @@ html {
   @media (max-width: 23.5em) {
     .navigation__icon {
       margin-top: 20px; } }
+  @media (max-width: 35.5em) {
+    .navigation__icon {
+      margin-top: 15px; } }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3rem;
     height: 2px;
@@ -379,6 +391,12 @@ html {
       width: 10rem;
       top: 5rem;
       right: 9rem; } }
+  @media (max-width: 35.5em) {
+    .navigation__background {
+      height: 5rem;
+      width: 5rem;
+      top: 3rem;
+      right: 3rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -460,6 +478,10 @@ html {
   @media (max-width: 23.5em) {
     .header {
       clip-path: polygon(0% 0%, 100% 0%, 100% 85vh, 0% 100%); } }
+  @media (max-width: 35.5em) {
+    .header {
+      clip-path: none;
+      height: 100vh; } }
   .header__logobox {
     position: absolute;
     top: 40px;
@@ -521,6 +543,9 @@ html {
         .header__heading--main {
           font-size: 45px;
           letter-spacing: 10px; } }
+      @media (max-width: 20em) {
+        .header__heading--main {
+          font-size: 35px; } }
     .header__heading--sub {
       display: block;
       font-size: 20px;
@@ -535,6 +560,9 @@ html {
         .header__heading--sub {
           font-size: 16px;
           letter-spacing: 7px; } }
+      @media (max-width: 20em) {
+        .header__heading--sub {
+          font-size: 10px; } }
 
 .section__about {
   background-color: #f7f7f7;
@@ -578,6 +606,9 @@ html {
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "image" "paragraph";
         row-gap: 4rem; } }
+    @media (max-width: 20em) {
+      .section__about .content__container {
+        row-gap: 0rem; } }
     .section__about .content__container:not(:last-child) {
       margin-bottom: 8rem; }
     .section__about .content__container--left {
@@ -619,6 +650,9 @@ html {
     @media (max-width: 23.5em) {
       .composition__photo {
         width: 35%; } }
+    @media (max-width: 20em) {
+      .composition__photo {
+        width: 45%; } }
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
@@ -629,6 +663,10 @@ html {
       @media (max-width: 23.5em) {
         .composition__photo--p1 {
           left: 23rem;
+          top: -2rem; } }
+      @media (max-width: 20em) {
+        .composition__photo--p1 {
+          left: 12rem;
           top: -2rem; } }
     .composition__photo--p2 {
       right: 0;
@@ -645,6 +683,10 @@ html {
         .composition__photo--p2 {
           right: 19rem;
           top: 5rem; } }
+      @media (max-width: 20em) {
+        .composition__photo--p2 {
+          right: 10rem;
+          top: 5rem; } }
     .composition__photo--p3 {
       left: 20%;
       top: 10rem; }
@@ -660,6 +702,10 @@ html {
         .composition__photo--p3 {
           left: 33%;
           top: 12rem; } }
+      @media (max-width: 20em) {
+        .composition__photo--p3 {
+          left: 25%;
+          top: 14rem; } }
     .composition__photo:hover {
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
@@ -741,6 +787,13 @@ html {
     .container--features {
       column-gap: 60px;
       row-gap: 30px; } }
+  @media (max-width: 20em) {
+    .container--features {
+      column-gap: 20px; } }
+  @media (max-width: 35.5em) {
+    .container--features {
+      margin-left: 50px;
+      margin-right: 50px; } }
   .container--features--features1 {
     grid-area: item1; }
   .container--features--features2 {
@@ -968,6 +1021,10 @@ html {
     .book {
       height: 55rem;
       background-size: cover; } }
+  @media (max-width: 35.5em) {
+    .book {
+      height: 60rem;
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, rgba(0, 0, 0, 0) 50%), url(../../img/nat-10.jpg); } }
   .book__form {
     width: 50%;
     padding: 6rem; }
@@ -975,6 +1032,9 @@ html {
       .book__form {
         width: 70%;
         padding: 3rem; } }
+    @media (max-width: 35.5em) {
+      .book__form {
+        width: 55%; } }
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }

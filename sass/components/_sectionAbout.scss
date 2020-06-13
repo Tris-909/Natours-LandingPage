@@ -56,6 +56,10 @@
             row-gap: 4rem;
         }
 
+        @include respond(iphone5__vertical) {
+            row-gap: 0rem;
+        }
+
         &:not(:last-child) {
             margin-bottom: $gutter-vertical;
         }
@@ -110,6 +114,9 @@
         @include respond(iphone678__vertical) {
             width: 35%;
         }
+        @include respond(iphone5__vertical) {
+            width: 45%;
+        }
         &--p1 {    
             left: 0;
             top: -2rem;
@@ -120,6 +127,10 @@
             }
             @include respond(iphone678__vertical) {
                 left: 23rem;
+                top: -2rem;
+            }
+            @include respond(iphone5__vertical) {
+                left: 12rem;
                 top: -2rem;
             }
         }
@@ -140,6 +151,10 @@
                 right: 19rem;
                 top: 5rem;
             }
+            @include respond(iphone5__vertical) {
+                right: 10rem;
+                top: 5rem;
+            }
         }
 
         &--p3 {
@@ -157,6 +172,10 @@
             @include respond(iphone678__vertical) {
                 left: 33%;
                 top: 12rem;
+            }
+            @include respond(iphone5__vertical) {
+                left: 25%;
+                top: 14rem;
             }
         }
 

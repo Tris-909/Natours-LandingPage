@@ -19,10 +19,17 @@
     @include respond(iphone8plus) {
         background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, rgba(0, 0, 0, 0) 50%), url(../../img/nat-10.jpg);
     }
+    
     @include respond(ipad__horizontal) {
         height: 55rem;
         background-size: cover;
     }
+    @include respond(iphone5__horizontal) {
+        height: 60rem;
+        background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, rgba(0, 0, 0, 0) 50%), url(../../img/nat-10.jpg)
+    }
+
+
 
     &__form {
         width: 50%;
@@ -31,6 +38,9 @@
         @include respond(iphone8plus) {
             width: 70%;
             padding: 3rem;
+        }
+        @include respond(iphone5__horizontal) {
+            width: 55%;
         }
     }
 }

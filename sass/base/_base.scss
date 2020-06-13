@@ -17,6 +17,9 @@ body {
     @include respond(iphone678__vertical) {
         padding: 0px;
     }
+    @include respond(iphone5__horizontal) {
+        padding: 0px;
+    }
 }
 
 html {

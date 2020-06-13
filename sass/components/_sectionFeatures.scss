@@ -108,6 +108,15 @@
         row-gap: 30px;  
     }
 
+    @include respond(iphone5__vertical) {
+        column-gap: 20px;
+    }
+
+    @include respond(iphone5__horizontal) {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
     &--features1 {
         grid-area: item1;    
     }
