@@ -5,6 +5,11 @@
     padding: 25rem 0;
     margin-top: -25vh;
     
+    @include respond(ipad__vertical) {
+        padding: 35rem 0;
+        margin-top: -32vh;
+    }
+
     // TEXT OF ABOUT SECTION
     &--heading {
         font-size: $default-font-size;
@@ -30,12 +35,26 @@
         grid-template-areas: "paragraph image";
         column-gap: 6rem;
 
+        @include respond(ipad__horizontal) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:  
+            "image"
+            "paragraph";
+            row-gap: 4rem;
+        }
+
         &:not(:last-child) {
             margin-bottom: $gutter-vertical;
         }
 
         &--left {
             grid-area: paragraph;
+
+            @include respond(ipad__horizontal) {
+                margin-left: 100px;
+                margin-right: 100px;
+            }
         }
 
         &--right {
@@ -60,19 +79,38 @@
         z-index: 10;
         transition: all .2s;
 
+        @include respond(ipad__horizontal) {
+            width: 35%;
+        }
+
         &--p1 {    
             left: 0;
             top: -2rem;
+
+            @include respond(ipad__horizontal) {
+                left: 20rem;
+                top: -2rem;
+            }
         }
 
         &--p2 {
             right: 0;
             top: 2rem;
+
+            @include respond(ipad__horizontal) {
+                right: 21rem;
+                top: 2rem;
+            }
         }
 
         &--p3 {
             left: 20%;
             top: 10rem;
+
+            @include respond(ipad__horizontal) {
+                left: 33%;
+                top: 10rem;
+            }
         }
 
         &:hover {

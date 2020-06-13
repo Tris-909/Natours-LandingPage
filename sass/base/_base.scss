@@ -17,4 +17,8 @@ body {
 
 html {
     font-size: 62.5%;
+
+    @include respond(ipad__vertical) {
+        font-size: 35%;
+    }
 }

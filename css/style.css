@@ -13,6 +13,9 @@ body {
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 48em) {
+    html {
+      font-size: 35%; } }
 
 @keyframes moveInLeft {
   0% {
@@ -71,6 +74,11 @@ html {
   border-radius: 100px;
   transition: all .2s;
   position: relative; }
+  @media (max-width: 48em) {
+    .btn:link, .btn:visited {
+      padding: 10px 23px;
+      margin-top: 15px;
+      font-size: 10px; } }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -158,6 +166,9 @@ html {
 
 #EditFormButton {
   padding: 1rem 4rem; }
+  @media (max-width: 48em) {
+    #EditFormButton {
+      margin-top: 0px; } }
 
 .heading__component {
   font-size: 3.5rem;
@@ -260,6 +271,12 @@ html {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
+  @media (max-width: 64em) {
+    .navigation__button {
+      height: 5rem;
+      width: 5rem;
+      top: 6rem;
+      right: 6rem; } }
   .navigation__button:hover .navigation__icon::before {
     top: -1rem; }
   .navigation__button:hover .navigation__icon::after {
@@ -268,6 +285,9 @@ html {
 .navigation__icon {
   position: relative;
   margin-top: 3.3rem; }
+  @media (max-width: 64em) {
+    .navigation__icon {
+      margin-top: 25px; } }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3rem;
     height: 2px;
@@ -293,6 +313,12 @@ html {
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.05, 1.1); }
+  @media (max-width: 64em) {
+    .navigation__background {
+      height: 5rem;
+      width: 5rem;
+      top: 6rem;
+      right: 6rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -312,6 +338,9 @@ html {
   transform: translate(-50%, -50%);
   text-align: center;
   width: 100%; }
+  @media (max-width: 48em) {
+    .navigation__list {
+      top: 35%; } }
   .navigation__list--item {
     margin: 1rem;
     transition: all .5s; }
@@ -359,12 +388,18 @@ html {
   background-position: top;
   clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
   position: relative; }
+  @media (max-width: 48em) {
+    .header {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 65vh, 0% 80%); } }
   .header__logobox {
     position: absolute;
     top: 40px;
     left: 40px; }
     .header__logobox--logo {
       height: 35px; }
+      @media (max-width: 48em) {
+        .header__logobox--logo {
+          height: 50px; } }
   .header__textBox--position {
     position: absolute;
     top: 40%;
@@ -394,6 +429,10 @@ html {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -25vh; }
+  @media (max-width: 48em) {
+    .section__about {
+      padding: 35rem 0;
+      margin-top: -32vh; } }
   .section__about--heading {
     font-size: 1.6rem;
     font-weight: 700;
@@ -410,10 +449,20 @@ html {
     grid-template-rows: 1fr;
     grid-template-areas: "paragraph image";
     column-gap: 6rem; }
+    @media (max-width: 64em) {
+      .section__about .content__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "image" "paragraph";
+        row-gap: 4rem; } }
     .section__about .content__container:not(:last-child) {
       margin-bottom: 8rem; }
     .section__about .content__container--left {
       grid-area: paragraph; }
+      @media (max-width: 64em) {
+        .section__about .content__container--left {
+          margin-left: 100px;
+          margin-right: 100px; } }
     .section__about .content__container--right {
       grid-area: image; }
 
@@ -428,15 +477,30 @@ html {
     position: absolute;
     z-index: 10;
     transition: all .2s; }
+    @media (max-width: 64em) {
+      .composition__photo {
+        width: 35%; } }
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
+      @media (max-width: 64em) {
+        .composition__photo--p1 {
+          left: 20rem;
+          top: -2rem; } }
     .composition__photo--p2 {
       right: 0;
       top: 2rem; }
+      @media (max-width: 64em) {
+        .composition__photo--p2 {
+          right: 21rem;
+          top: 2rem; } }
     .composition__photo--p3 {
       left: 20%;
       top: 10rem; }
+      @media (max-width: 64em) {
+        .composition__photo--p3 {
+          left: 33%;
+          top: 10rem; } }
     .composition__photo:hover {
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
@@ -483,6 +547,15 @@ html {
   grid-template-rows: 1fr;
   grid-template-areas: "item1 item2 item3 item4";
   column-gap: 6rem; }
+  @media (max-width: 64em) {
+    .container--features {
+      margin-left: 100px;
+      margin-right: 100px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "item1 item2"  "item3 item4";
+      column-gap: 100px;
+      row-gap: 100px; } }
   .container--features--features1 {
     grid-area: item1; }
   .container--features--features2 {
@@ -595,6 +668,15 @@ html {
     grid-template-rows: 1fr;
     grid-template-areas: "card1 card2 card3";
     column-gap: 6rem; }
+    @media (max-width: 64em) {
+      .section__tours--container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "card1" "card2" "card3";
+        width: 50%;
+        row-gap: 100px;
+        margin-left: 25%;
+        margin-right: 20%; } }
     .section__tours--container-1 {
       grid-area: card1; }
     .section__tours--container-2 {
@@ -685,6 +767,10 @@ html {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
   height: 50rem; }
+  @media (max-width: 64em) {
+    .book {
+      height: 55rem;
+      background-size: cover; } }
   .book__form {
     width: 50%;
     padding: 6rem; }

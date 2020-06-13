@@ -19,6 +19,13 @@
         text-align: center;
         cursor: pointer;
 
+        @include respond(ipad__horizontal) {
+            height: 5rem;
+            width: 5rem;
+            top : 6rem;
+            right : 6rem;
+        }
+
         &:hover {
             .navigation__icon::before {
                 top: -1rem;
@@ -32,6 +39,10 @@
     &__icon {
         position: relative;
         margin-top: 3.3rem;
+
+        @include respond(ipad__horizontal) {
+            margin-top: 25px;
+        }
 
         &,
         &::before,
@@ -69,6 +80,13 @@
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86,0,0.05,1.1);
+
+        @include respond(ipad__horizontal) {
+            height: 5rem;
+            width: 5rem;
+            top : 6rem;
+            right : 6rem;
+        }
     }
 
     &__nav {
@@ -93,6 +111,10 @@
         transform: translate(-50%, -50%);
         text-align: center;
         width: 100%;
+
+        @include respond(ipad__vertical) {
+            top: 35%;
+        }
 
         &--item {
             margin: 1rem;

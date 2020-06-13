@@ -1,10 +1,13 @@
+//Import mixins first so avoid error using mixin before declare it
+@import "./abstracts/mixins";
+
 @import "./base/base";
 @import "./base/animation";
 @import "./base/utilities";
 
 // UTILITIES
 @import "./abstracts/variables";
-@import "./abstracts/mixins";
+
 
 //SINGLE COMPONENT
 @import "./components/button";

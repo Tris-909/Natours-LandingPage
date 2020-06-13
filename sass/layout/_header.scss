@@ -10,6 +10,10 @@
     clip-path: polygon(0% 0%,100% 0%,100% 75vh,0% 100%);
     position: relative;
 
+    @include respond(ipad__vertical) {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 65vh, 0% 80%);
+    }
+
     &__logobox {
         position: absolute;
         top: 40px;
@@ -17,6 +21,10 @@
 
         &--logo {
             height: 35px;  
+
+            @include respond(ipad__vertical) {
+                height: 50px;  
+            }
         }
     }
 
@@ -26,6 +34,10 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+
+        @include respond(ipad) {
+            top: 35%;
+        }
     }
 
     &__heading {
