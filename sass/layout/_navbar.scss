@@ -40,6 +40,15 @@
             right: 9rem;
         }
 
+        @include respond(iphone678__vertical) {
+            height: 10rem;
+            width: 10rem;
+            top: 5rem;
+            right: 9rem;
+        }
+
+
+
         &:hover {
             .navigation__icon::before {
                 top: -1rem;
@@ -66,7 +75,9 @@
             margin-top: 15px;
         }
 
-
+        @include respond(iphone678__vertical) {
+            margin-top: 20px;
+        }
 
         &,
         &::before,
@@ -123,6 +134,12 @@
             height: 7rem;
             width: 7rem;
             top: 9rem;
+            right: 9rem;
+        }
+        @include respond(iphone678__vertical) {
+            height: 10rem;
+            width: 10rem;
+            top: 5rem;
             right: 9rem;
         }
     }

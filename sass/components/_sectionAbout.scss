@@ -17,7 +17,10 @@
         padding: 25rem 0 15rem 0;
         margin-top: -32vh;
     }
-
+    @include respond(iphone678__vertical) {
+        padding: 25rem 0 15rem 0;
+        margin-top: -13vh;
+    }
     
     // TEXT OF ABOUT SECTION
     &--heading {
@@ -104,12 +107,19 @@
         @include respond(iphone8plus) {
             width: 50%;
         }
+        @include respond(iphone678__vertical) {
+            width: 35%;
+        }
         &--p1 {    
             left: 0;
             top: -2rem;
 
             @include respond(ipad__horizontal) {
                 left: 20rem;
+                top: -2rem;
+            }
+            @include respond(iphone678__vertical) {
+                left: 23rem;
                 top: -2rem;
             }
         }
@@ -126,6 +136,10 @@
                 right: 25rem;
                 top: 7rem;
             }
+            @include respond(iphone678__vertical) {
+                right: 19rem;
+                top: 5rem;
+            }
         }
 
         &--p3 {
@@ -140,6 +154,10 @@
                 left: 33%;
                 top: 17rem;
             }   
+            @include respond(iphone678__vertical) {
+                left: 33%;
+                top: 12rem;
+            }
         }
 
         &:hover {

@@ -28,6 +28,7 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
     transition: all .2s;
     z-index: 0;
+    height: 100%;
 
     &__icon {
         font-size: 6rem;
@@ -45,11 +46,17 @@
         @include respond(iphone8plus__horizontal) {
             font-size: 2.4rem; 
         }
+        @include respond(iphone678__vertical) {
+            font-size: 2.6rem; 
+        }
     }
 
     &__text {
         @include respond(iphone8plus__horizontal) {
             font-size: 2.5rem; 
+        }
+        @include respond(iphone678__vertical) {
+            font-size: 2rem; 
         }
     }
 

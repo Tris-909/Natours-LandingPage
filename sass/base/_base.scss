@@ -13,6 +13,10 @@ body {
     line-height: 1.7;
     color: $color-grey-dark;
     padding: 30px;
+
+    @include respond(iphone678__vertical) {
+        padding: 0px;
+    }
 }
 
 html {
@@ -26,5 +30,8 @@ html {
     }
     @include respond(iphone8plus__horizontal) {
         font-size: 40%;
+    }
+    @include respond(iphone678__vertical) {
+        font-size: 25%;
     }
 }

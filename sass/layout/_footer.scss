@@ -81,6 +81,10 @@
             padding-top: 0;
         }
 
+        @include respond(iphone678__vertical) {
+            display: flex;
+        }
+
         &--newline {
             padding: 1rem;
             display: block;

@@ -17,8 +17,11 @@
     @if $breakpoint == GalaxyS5 {
         @media (max-width: 22.5em) {@content;} //360px
     }
-    @if $breakpoint == iphone8 {
+    @if $breakpoint == iphone678__vertical {
         @media (max-width: 23.5em) {@content;} //376px
+    }
+    @if $breakpoint == iphone678__horizontal {
+        @media (max-width: 41.5em) {@content;} //667px
     }
     @if $breakpoint == iphone8plus {
         @media (max-width: 25.875em) {@content;} //414px
