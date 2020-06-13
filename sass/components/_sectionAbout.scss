@@ -9,7 +9,16 @@
         padding: 35rem 0;
         margin-top: -32vh;
     }
+    @include respond(iphone8plus) {
+        padding: 35rem 0 17rem 0;
+        margin-top: -40vh;
+    }
+    @include respond(iphone8plus__horizontal) {
+        padding: 25rem 0 15rem 0;
+        margin-top: -32vh;
+    }
 
+    
     // TEXT OF ABOUT SECTION
     &--heading {
         font-size: $default-font-size;
@@ -55,6 +64,16 @@
                 margin-left: 100px;
                 margin-right: 100px;
             }
+            @include respond(iphone8plus__horizontal) {
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-top: 25px;
+            }
+            @include respond(iphone8plus) {
+                margin-left: 55px;
+                margin-right: 55px;
+                margin-top: 20px;
+            }
         }
 
         &--right {
@@ -82,7 +101,9 @@
         @include respond(ipad__horizontal) {
             width: 35%;
         }
-
+        @include respond(iphone8plus) {
+            width: 50%;
+        }
         &--p1 {    
             left: 0;
             top: -2rem;
@@ -101,6 +122,10 @@
                 right: 21rem;
                 top: 2rem;
             }
+            @include respond(iphone8plus) {
+                right: 25rem;
+                top: 7rem;
+            }
         }
 
         &--p3 {
@@ -111,6 +136,10 @@
                 left: 33%;
                 top: 10rem;
             }
+            @include respond(iphone8plus) {
+                left: 33%;
+                top: 17rem;
+            }   
         }
 
         &:hover {

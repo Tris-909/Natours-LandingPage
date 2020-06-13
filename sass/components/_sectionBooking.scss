@@ -16,15 +16,22 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
     height: 50rem;
 
+    @include respond(iphone8plus) {
+        background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, rgba(0, 0, 0, 0) 50%), url(../../img/nat-10.jpg);
+    }
     @include respond(ipad__horizontal) {
         height: 55rem;
         background-size: cover;
-
     }
 
     &__form {
         width: 50%;
         padding: 6rem;
+
+        @include respond(iphone8plus) {
+            width: 70%;
+            padding: 3rem;
+        }
     }
 }
 
@@ -34,10 +41,6 @@
         
         &:not(:last-child) {
             margin-bottom: 2rem;
-        }
-
-        @include respond(ipad__vertical) {
-
         }
     }
 

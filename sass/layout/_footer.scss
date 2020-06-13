@@ -3,10 +3,17 @@
     padding: 10rem;
     font-size: 1.4rem;
 
+    @include respond(iphone8plus) {
+        padding: 5rem;
+    }
     // LOGO
     &__logo--box {
         text-align: center;
         margin-bottom: 8rem;
+
+        @include respond(iphone8plus) {
+            margin-bottom: 3rem;
+        }
     }
 
     &__logo {
@@ -24,8 +31,19 @@
         column-gap: 6rem;
         grid-template-areas: "Navigation  Copyright";
 
+        @include respond(iphone8plus) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 4rem;
+            grid-template-areas: 
+            "Navigation"  
+            "Copyright";
+        }
+
         &--item1 {
             grid-area: Navigation;
+            text-align: center;
+
         }
 
         &--item2 {
@@ -57,6 +75,11 @@
         width: 80%;
         float: right;
         text-align: center;
+
+        @include respond(iphone8plus) {
+            border: none;
+            padding-top: 0;
+        }
 
         &--newline {
             padding: 1rem;

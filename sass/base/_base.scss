@@ -21,4 +21,10 @@ html {
     @include respond(ipad__vertical) {
         font-size: 35%;
     }
+    @include respond(iphone8plus) {
+        font-size: 30%;
+    }
+    @include respond(iphone8plus__horizontal) {
+        font-size: 40%;
+    }
 }

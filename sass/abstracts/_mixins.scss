@@ -23,11 +23,14 @@
     @if $breakpoint == iphone8plus {
         @media (max-width: 25.875em) {@content;} //414px
     }
+    @if $breakpoint == iphone8plus__horizontal {
+        @media (max-width: 46em) {@content;} //736px
+    }
     @if $breakpoint == ipad__vertical  {
         @media (max-width: 48em) {@content;} //768px
     }
     @if $breakpoint == ipad__horizontal {
-        @media (max-width: 64em) {@content;}
+        @media (max-width: 64em) {@content;} //1024px
     }
     @if $breakpoint == big-desktop  {
         @media (max-width: 120em) {@content;} //1920px

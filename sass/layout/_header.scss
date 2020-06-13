@@ -13,17 +13,33 @@
     @include respond(ipad__vertical) {
         clip-path: polygon(0% 0%, 100% 0%, 100% 65vh, 0% 80%);
     }
+    @include respond(iphone8plus__horizontal) {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 95%);
+    }
 
     &__logobox {
         position: absolute;
         top: 40px;
         left: 40px;
 
+        @include respond(iphone8plus__horizontal) {
+            top: 25px;
+            left: 25px;
+        }
+
         &--logo {
             height: 35px;  
 
             @include respond(ipad__vertical) {
                 height: 50px;  
+            }
+
+            @include respond(iphone8plus) {
+                height: 35px;  
+            }
+
+            @include respond(iphone8plus__horizontal) {
+                height: 35px;  
             }
         }
     }
@@ -38,6 +54,9 @@
         @include respond(ipad) {
             top: 35%;
         }
+        @include respond(iphone8plus__horizontal) {
+            top: 45%;
+        }
     }
 
     &__heading {
@@ -47,6 +66,13 @@
         backface-visibility: hidden;
         margin-bottom: 60px;
 
+        @include respond(iphone8plus) {
+            margin-bottom: 30px;
+        }
+        @include respond(iphone8plus__horizontal) {
+            margin-bottom: 20px;
+        }
+
         &--main {
             display: block;
             font-size: 60px;
@@ -54,6 +80,16 @@
             letter-spacing: 35px;
         
             animation: moveInLeft 1.3s ease-out;
+
+            @include respond(iphone8plus) {
+                font-size: 35px;
+                letter-spacing:10px;
+            }
+
+            @include respond(iphone8plus__horizontal) {
+                font-size: 50px;
+                letter-spacing:17px;
+            }
         }
 
         &--sub {
@@ -63,6 +99,15 @@
             letter-spacing: 17.4px;
         
             animation: moveInRight 1.3s ease-out;
+
+            @include respond(iphone8plus) {
+                font-size: 10px;
+                letter-spacing:5px;
+            }
+            @include respond(iphone8plus__horizontal) {
+                font-size: 16px;
+                letter-spacing:7px;
+            }
         }
     }
 }

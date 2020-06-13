@@ -20,6 +20,10 @@
             border-radius: 3px;
             overflow: hidden;
             box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+            @include respond(iphone8plus__horizontal) {
+                height: 60rem;
+            }
         }
 
         &__picture {
@@ -83,6 +87,10 @@
                     text-align: center;
                     font-size: 1.5rem;
                     padding: 1rem;
+
+                    @include respond(iphone8plus__horizontal) {
+                        font-size: 2.2rem; 
+                    }
                 }
 
                 & li:not(:last-child) {

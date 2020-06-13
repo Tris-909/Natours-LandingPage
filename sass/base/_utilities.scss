@@ -16,6 +16,9 @@
 
 .u-margin-top-big {
     margin-top: 8rem;
+    @include respond(iphone8plus__horizontal) {
+        margin-top: 12rem;
+    }
 }
 
 .u-margin-top-medium {
