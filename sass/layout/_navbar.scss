@@ -80,12 +80,16 @@
             margin-top: 15px;
         }
 
-        @include respond(iphone678__vertical) {
-            margin-top: 20px;
-        }
-
         @include respond(iphone5__horizontal) {
             margin-top: 15px;
+        }
+
+        @include respond(iphone678__vertical) {
+            margin-top: 10px;
+        }
+
+        @include respond(iphone5__vertical) {
+            margin-top: 10px;
         }
 
         &,

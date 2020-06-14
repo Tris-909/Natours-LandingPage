@@ -91,16 +91,20 @@
     }
 
     @include respond(iphone8plus) {
-        margin-left: 40px;
-        margin-right: 40px;
-
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
-        "item1 item2" 
-        "item3 item4";
-        column-gap: 20px;
+        "item1" 
+        "item2" 
+        "item3" 
+        "item4";
         row-gap: 20px;  
+    }
+
+    
+    @include respond(iphone8plus) {
+        margin-left: 100px;
+        margin-right: 100px; 
     }
 
     @include respond(iphone8plus__horizontal) {

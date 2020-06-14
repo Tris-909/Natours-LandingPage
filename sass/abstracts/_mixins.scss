@@ -33,7 +33,7 @@
         @media (max-width: 46em) {@content;} //736px
     }
     @if $breakpoint == ipad__vertical  {
-        @media (max-width: 48em) {@content;} //768px
+        @media (max-width: 46.0625em) {@content;} //768px
     }
     @if $breakpoint == ipad__horizontal {
         @media (max-width: 64em) {@content;} //1024px
